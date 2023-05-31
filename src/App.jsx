@@ -4,6 +4,7 @@ import ProductDetail from './pages/ProductDetail';
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import FetchingData from './components/FetchingData';
+import Cart from './pages/Cart';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home/>} />
+        <Route path='/cart' element={<Cart/>} />
         <Route exact path="/fetchingData" element={<FetchingData/>} />
         <Route path="/productDetail/:id" element={<ProductDetail/>} />
       </Routes>

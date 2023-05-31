@@ -11,6 +11,7 @@ const Products = ({ product }) => {
             <h2>{product.title}</h2>
           </Link>
         </div>
+        
       ))}
     </div>
   );
